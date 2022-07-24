@@ -1,15 +1,41 @@
 {
   "pages":[
-    "pages/home/home",
 	"pages/menu/menu",
+    "pages/home/home",
 	"pages/new/new",
-	"pages/kefu/kefu"
+	"pages/aaa/aaa",
+	"pages/kefu/kefu",
+	"cpmponents/banner/banner"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "咖啡馆",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+	  "list": [{
+		  "pagePath": "pages/home/home",
+		  "text": "首页",
+		  "iconPath": "/image/bar/bar1.png",
+		  "selectedIconPath": "/image/bar/bar1_1.png"
+	  },{
+		"pagePath": "pages/menu/menu",
+		"text": "菜单",
+		"iconPath": "/image/bar/bar2.png",
+		"selectedIconPath": "/image/bar/bar2_1.png"
+	},{
+		"pagePath": "pages/new/new",
+		"text": "新品",
+		"iconPath": "/image/bar/bar3.png",
+		"selectedIconPath": "/image/bar/bar3_1.png"
+	},{
+		"pagePath": "pages/kefu/kefu",
+		"text": "小二",
+		"iconPath": "/image/bar/bar4.png",
+		"selectedIconPath": "/image/bar/bar4_1.png"
+	}
+	]
   },
   "sitemapLocation": "sitemap.json"
 }

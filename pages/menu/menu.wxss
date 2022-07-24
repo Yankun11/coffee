@@ -1,1 +1,71 @@
-/* pages/menu/menu.wxss */
+.main{
+	width: 100vw;
+	height: calc(100vh - calc(100vw/1080*432));
+	background: rgb(245, 242, 242);
+}
+.left{
+	border-right: 1rpx solid #000;
+	width: 25%;
+	height: calc(100vh - calc(100vw/1080*432));
+	float: left;
+	box-sizing: border-box;
+}
+.left view{
+	border-bottom: 1rpx solid #000;
+	height: 80rpx;
+	line-height: 80rpx;
+	background: #fff;
+	text-align: center;
+	position: relative;
+}
+.left view::before{
+	content: "";
+	background: #fff;
+	width: 10rpx;
+	height: 80rpx;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.left view.active::before{
+	background: #333999
+}
+
+.right{
+	height: calc(100vh - calc(100vw/1080*432));
+	float: right;
+	width: 75%;
+	padding: 0 2%;
+	box-sizing: border-box;
+}
+.right .title{
+	height: 60rpx;
+	line-height: 60rpx;
+}
+.right .content{
+	background: #fff;
+	padding:1%;
+	padding-right: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.box{
+	width: 32%;
+	margin-right: 1%;
+	text-align: center;
+	margin-bottom: 10rpx;
+}
+.box image{
+	width: 160rpx;
+	height: 160rpx;
+}
+.box text{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+	font: 28rpx;
+	white-space: nowrap;
+}

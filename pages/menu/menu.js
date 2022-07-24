@@ -1,66 +1,93 @@
 // pages/menu/menu.js
 Page({
-
-	/**
-	 * 页面的初始数据
-	 */
 	data: {
-
+		// banner的轮播图数组
+		swiperArr:[
+			"/image/banner/music01.webp",
+			"/image/banner/music02.webp",
+			"/image/banner/music03.webp",
+		],
+		menuArr:[
+			{
+				id:0,
+				title:'人气Top',
+				sunArr:[
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"桃桃芝士红宝石"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"咖啡风味安慕希"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"陨石拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"冲绳拿铁"}
+				]
+			},
+			{
+				id:1,
+				title:'大师咖啡',
+				sunArr:[
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"桃桃芝士红宝石"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"咖啡风味安慕希"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"陨石拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"冲绳拿铁"}
+				]
+			},
+			{
+				id:2,
+				title:'小鹿茶精选',
+				sunArr:[
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"桃桃芝士红宝石"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"咖啡风味安慕希"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"陨石拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"冲绳拿铁"}
+				]
+			},
+			{
+				id:3,
+				title:'瑞纳冰',
+				sunArr:[
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"桃桃芝士红宝石"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"咖啡风味安慕希"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"陨石拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"冲绳拿铁"}
+				]
+			},
+			{
+				id:4,
+				title:'鲜榨果蔬汁',
+				sunArr:[
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"桃桃芝士红宝石"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"咖啡风味安慕希"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"陨石拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"冲绳拿铁"}
+				]
+			},
+			{
+				id:5,
+				title:'经典饮品',
+				sunArr:[
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"桃桃芝士红宝石"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"咖啡风味安慕希"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"陨石拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"冲绳拿铁"}
+				]
+			},
+			{
+				id:6,
+				title:'健康轻食',
+				sunArr:[
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"桃桃芝士红宝石"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"咖啡风味安慕希"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"陨石拿铁"},
+					{imgSrc:"/image/menu/menu_1.jpg",imgDesc:"冲绳拿铁"}
+				]
+			}
+		],
+		// 左侧的id
+		leftId:'left0',
+		rightId:'right0'
 	},
-
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad(options) {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide() {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload() {
-
-	},
-
-	/**
-	 * 页面相关事件处理函数--监听用户下拉动作
-	 */
-	onPullDownRefresh() {
-
-	},
-
-	/**
-	 * 页面上拉触底事件的处理函数
-	 */
-	onReachBottom() {
-
-	},
-
-	/**
-	 * 用户点击右上角分享
-	 */
-	onShareAppMessage() {
-
-	}
 })

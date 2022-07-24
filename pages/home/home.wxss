@@ -1,1 +1,72 @@
-/* pages/home/home.wxss */
+.title{
+	height: 100rpx;
+	position: relative;
+}
+.title .line{
+	position: absolute;
+	width:40%;
+	height: 4rpx;
+	background: #999;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.title_name{
+	width: 30%;
+	text-align: center;
+	background: #fff;
+	line-height: 100rpx;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.scroll-view_H{
+	white-space: nowrap;
+	height: 310rpx;
+  }
+  .scroll-view-item_H{
+	display: inline-block;
+	width: 35%;
+	margin-left: 2%;
+	box-shadow: 4rpx 4rpx 6rpx #000;
+	border-radius: 6rpx;
+  }
+  .scroll-view-item_H image{
+	  width: 100%;
+	  display: block;
+  }
+  .scroll-view-item_H view{
+	  text-align: center;
+  }
+  ::-webkit-scrollbar{
+	  width: 0;
+	  height: 0;
+	  color: transparent;
+  }
+
+  .new_product{
+	  padding: 20rpx;
+	  display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+  }
+  .new_product view{
+	width: 49%;
+	margin-bottom: 10rpx;
+	background: #fff;
+	border-radius: 10rpx;
+	overflow: hidden;
+	box-shadow: 0 0 4rpx #333333;
+  }
+  .new_product view image{
+	  width: 100%;
+	  display: block;
+  }
+  .new_product view text{
+	  display: block;
+	  text-align: center;
+	  line-height: 50repx;
+  }

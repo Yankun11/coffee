@@ -1,0 +1,27 @@
+swiper{
+	height:calc(100vw/1080*432);
+}
+swiper image{
+	width: 100vw;
+}
+.banner{
+	position: relative;
+}
+.dots{
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 160rpx;
+  overflow: hidden;
+}
+.dots view{
+	width: 20rpx;
+	height: 20rpx;
+	border-radius: 50%;
+	background: #999;
+	float: left;
+	margin-left: 20rpx;
+}
+.dots view.active{
+	background: #333999;
+}
