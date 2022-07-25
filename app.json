@@ -1,10 +1,10 @@
 {
   "pages":[
+	"pages/kefu/kefu",
 	"pages/menu/menu",
     "pages/home/home",
 	"pages/new/new",
 	"pages/aaa/aaa",
-	"pages/kefu/kefu",
 	"cpmponents/banner/banner"
   ],
   "window":{

@@ -3,11 +3,11 @@
 <view class="main">
 	<!-- 左边 -->
 	<scroll-view class="left" scroll-y="true" scroll-into-view="{{leftId}}">
-		<view wx:for="{{menuArr}}" wx:key="*this" id="left{{item.id}}" class="scroll-view-item">{{item.title}}</view>
+		<view wx:for="{{menuArr}}" data-myid="{{item.id}}" wx:key="*this" id="left{{item.id}}" class="scroll-view-item {{leftActiveNum==item.id ? 'active' : ''}}" bindtap="leftClickFn">{{item.title}}</view>
 	</scroll-view>
-	<!-- 左边 -->
-	<scroll-view class="right" scroll-y="true" bindscroll="scroll" scroll-into-view="{{rightId}}">
-		<view wx:for="{{menuArr}}" wx:key="*this" id="right{{item.id}}" class="scroll-view-item">
+	<!-- 右边 -->
+	<scroll-view class="right" scroll-with-animation="true" scroll-y="true" bindscroll="rightScrollFn" scroll-into-view="{{rightId}}">
+		<view wx:for="{{menuArr}}" wx:key="*this" id="right{{item.id}}" class="scroll-view-item rightblock">
 			<view class="title">{{item.title}}</view>
 			<view class="content">
 				<view class="box" wx:for="{{item.sunArr}}" wx:key="*this" wx:for-item="items">
